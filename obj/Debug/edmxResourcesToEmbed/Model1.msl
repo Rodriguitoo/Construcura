@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CKEModelStoreContainer" CdmEntityContainer="CKEEntities">
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="CKEModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="num_emp" ColumnName="num_emp" />
+          <ScalarProperty Name="nom_emp" ColumnName="nom_emp" />
+          <ScalarProperty Name="rut_emp" ColumnName="rut_emp" />
+          <ScalarProperty Name="dir_emp" ColumnName="dir_emp" />
+          <ScalarProperty Name="tel_emp" ColumnName="tel_emp" />
+          <ScalarProperty Name="cor_emp" ColumnName="cor_emp" />
+          <ScalarProperty Name="idc_emp" ColumnName="idc_emp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

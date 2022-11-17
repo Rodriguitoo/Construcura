@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CKEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="num_emp" />
+    </Key>
+    <Property Name="num_emp" Type="int" Nullable="false" />
+    <Property Name="nom_emp" Type="varchar(max)" Nullable="false" />
+    <Property Name="rut_emp" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dir_emp" Type="varchar(max)" Nullable="false" />
+    <Property Name="tel_emp" Type="varchar(max)" Nullable="false" />
+    <Property Name="cor_emp" Type="varchar(max)" Nullable="false" />
+    <Property Name="idc_emp" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CKEModelStoreContainer">
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
